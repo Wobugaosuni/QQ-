@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QQ登录</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link href="QQ登录.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="QQ面板.js"></script>
+</head>
+<body>
+    <div class="box" id="box">
+
+        <div id="logog">
+            <div class="logo" id="logo">
+                <img src="login_window_logo.png" />
+            </div>
+        </div>
+        <div class="close">
+            <img src="boxy_btn.png" />
+        </div>
+        <div class="inputdiv">
+            <label for="user">账 号：</label>
+            <input type="text" id="user" value="QQ号码或Email账号" onfocus="
+               if(value=='QQ号码或Email账号')
+            	  {value=''}" onblur="
+               if(value=='')
+            	  {value='QQ号码或Email账号'}" /><br /><br />
+            <label for="pw">密 码：</label>
+            <input type="password" id="pw" /><br />
+        </div>
+        <div class="state">
+            <input type="button" class="login" value="登 录" />
+            <div class="statebox">
+            	<div class="statebox1" id="statebox1" title="选择在线状态">
+            		<img class="imgdf" src="在线.png" />
+                    <img src="向下.png" />
+                    <p class="pdf">我在线上</p>
+            	</div>
+            	<div class="statelist" id="statelist">
+                 <ul id="ulli">	
+                     <li>
+                         <div>
+                            <img class="icon" src="在线.png" />
+                         </div>
+                         <div class="txt">我在线上</div>
+                     </li>
+                     <li>
+                         <div>
+                            <img class="icon" src="忙碌.png" />
+                         </div>
+                         <div class="txt">忙碌</div>
+                     </li>
+                     <li>
+                         <div>
+                            <img class="icon" src="勿扰.png" />
+                        </div>
+                         <div class="txt">勿扰</div>
+                     </li>
+                 </ul>
+               </div>
+            </div>
+<!--
+            <select class="statelist">
+            	<option selected="selected">我在线上</option>
+            	<option>Q我吧</option>
+            	<option>离开</option>
+            	<option>忙碌</option>
+            	<option>请勿打扰</option>
+            	<option>隐身</option>
+            </select>
+-->
+        </div>
+    </div>
+
+</body>
+</html>

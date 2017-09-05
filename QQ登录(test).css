@@ -1,0 +1,95 @@
+*{margin:0;padding:0;}
+
+.box{
+	position:relative;
+	width:400px;
+	height:270px;
+	top:200px;
+	left: 500px;
+	border:1px solid #848181;
+	background:#f6f6f6;
+	box-shadow: 0px 0px 10px grey;/*边框阴影，四边的阴影*/
+	border-radius: 10px;/*圆角边框*/
+	
+}
+
+.close{
+	position:absolute;
+	top:-8px;
+	right:-8px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.logo{
+	margin:20px auto;
+	text-align: center;
+	cursor: move; /*鼠标移动手势 */
+}
+
+.inputdiv{
+	font-size:16px;
+	font-family:"Microsoft Yahei";
+	text-align: center;
+}
+
+#user,#pw{
+	font-size: 14px;
+	padding:3px;
+	border:1px #ccc solid; /*设置input边框颜色*/
+	border-radius: 8px;
+	outline: none;/*把默认的选中颜色去掉*/
+	color: #A0A0A0;
+}
+
+.state{
+	margin-top:30px;
+	margin-left: 100px;
+	font-size: 13px;
+}
+
+.login{
+	float:left;
+	font-size: 30px;
+	margin-right: 20px;
+	width:90px;
+    cursor: pointer;
+	
+}
+
+ul{
+	list-style: none;
+}
+
+.statebox{
+	float:left;
+    width:100px;
+/*    background-color: #B0E0E6;
+*/  text-align:left;
+    cursor: pointer;
+    position: relative;
+}
+.statelist{
+    width:80px;
+    background-color: white;
+    border-width:1px;
+    border-color:#ccc #6a6a6a #666 #cdcdcd; /*顺时针颜色*/
+    border-style: solid;
+    padding:5px 3px;
+    top:2px;
+    position: absolute;
+   /* display: none;*/
+}
+
+.statelist div{
+	display: inline;
+    
+}
+
+
+/*
+.statelist{
+	font-size: 30px;
+	cursor: pointer;
+}
+*/
